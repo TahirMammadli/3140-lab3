@@ -168,14 +168,4 @@ fi
 
 #sets up database product
 npm install
-
-csvFile=""
-#requests csv file to populate database
-echo "Please enter a proper CSV file to populate database with"
-read csvFile
-if [ "${csvFile##*.}" = "csv" ] 
-then
-    node app.js ${csvFile}
-else
-    echo "${csvFile%.*} is not a proper CSV file."
-fi
+node app.js
