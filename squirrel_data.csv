@@ -1,0 +1,101 @@
+squirrel_sighting_id,color_key,activity,age,date,time,location_id
+000001,Bl,Chasing,Juvenile,2022-12-5,13:50:16,807126
+000002,CiGr,Eating,Adult,2021-7-19,17:58:10,698807
+000003,Br,Chasing,Juvenile,2022-4-22,11:2:10,724823
+000004,Au,Eating,Juvenile,2022-2-1,17:3:47,444879
+000005,Bl,Eating,Adult,2021-12-12,9:44:19,542861
+000006,Br,Eating,Juvenile,2022-2-26,19:26:0,234577
+000007,WhGr,Racing,Adult,2021-5-13,18:50:56,728973
+000008,CiGr,Climbing,Sub adult,2022-10-27,8:55:51,847051
+000009,Gr,Chasing,Sub adult,2022-9-13,4:43:42,297679
+000010,Ci,Racing,Adult,2021-7-19,0:49:54,215684
+000011,Wh,Chasing,Juvenile,2022-3-27,14:38:10,675131
+000012,Wh,Eating,Sub adult,2022-8-27,8:25:54,742578
+000013,GrBr,Zigging and Zagging,Adult,2022-9-23,3:57:37,677793
+000014,WhGr,Racing,Adult,2022-7-14,12:7:32,522251
+000015,GrBr,Chasing,Adult,2021-11-16,21:48:51,141189
+000016,GrBr,Eating,Sub adult,2022-7-9,16:29:19,858897
+000017,CiGr,Chasing,Sub adult,2021-4-20,6:11:45,907893
+000018,CiGr,Zigging and Zagging,Sub adult,2022-9-20,12:23:59,712688
+000019,CiBl,Chasing,Adult,2022-6-12,3:58:54,463002
+000020,CiGr,Zigging and Zagging,Adult,2021-8-27,20:50:38,867697
+000021,Gr,Zigging and Zagging,Juvenile,2022-9-16,21:34:46,490637
+000022,Br,Racing,Adult,2022-6-21,21:29:14,677586
+000023,GrBr,Racing,Sub adult,2021-4-17,14:7:21,016729
+000024,CiBl,Eating,Adult,2022-6-9,13:6:8,214876
+000025,Au,Racing,Adult,2021-8-6,15:26:33,601073
+000026,Wh,Eating,Sub adult,2022-7-23,21:21:45,525613
+000027,WhGr,Racing,Juvenile,2022-10-17,9:27:6,245844
+000028,CiBl,Chasing,Adult,2022-3-8,9:39:36,473495
+000029,GrBr,Zigging and Zagging,Juvenile,2022-10-26,10:34:12,298023
+000030,Gr,Zigging and Zagging,Juvenile,2022-8-5,10:14:34,345927
+000031,Br,Zigging and Zagging,Sub adult,2021-3-23,5:21:11,639883
+000032,WhGr,Climbing,Adult,2021-9-11,18:26:52,989294
+000033,WhGr,Zigging and Zagging,Adult,2022-7-15,14:21:39,884438
+000034,Wh,Climbing,Sub adult,2021-3-5,23:44:20,741651
+000035,Gr,Chasing,Adult,2021-7-14,19:13:30,121939
+000036,Br,Eating,Adult,2022-8-10,4:38:2,838264
+000037,CiGr,Eating,Adult,2022-5-28,3:43:39,998790
+000038,Bl,Chasing,Adult,2022-12-12,23:14:40,278947
+000039,WhGr,Chasing,Sub adult,2022-12-5,9:7:54,551933
+000040,CiGr,Zigging and Zagging,Adult,2021-6-11,17:5:8,365828
+000041,Gr,Zigging and Zagging,Adult,2022-6-9,17:6:16,269495
+000042,Bl,Racing,Adult,2021-8-18,6:2:39,246180
+000043,Wh,Eating,Adult,2022-9-9,6:28:3,302716
+000044,Au,Zigging and Zagging,Sub adult,2022-5-12,16:58:0,827156
+000045,CiGr,Zigging and Zagging,Adult,2021-8-4,6:21:7,614425
+000046,WhGr,Climbing,Juvenile,2022-3-5,21:38:1,367770
+000047,BlBr,Eating,Juvenile,2021-10-23,2:5:13,115998
+000048,Wh,Eating,Adult,2022-6-23,9:55:22,898159
+000049,Wh,Racing,Juvenile,2021-4-8,11:46:19,517538
+000050,Bl,Eating,Juvenile,2022-6-15,22:48:40,367197
+000051,BlBr,Racing,Adult,2022-2-25,5:35:13,695172
+000052,Br,Climbing,Sub adult,2022-6-11,13:45:25,076660
+000053,Bl,Eating,Adult,2022-4-11,13:29:30,864641
+000054,CiGr,Racing,Sub adult,2022-6-5,3:4:32,523735
+000055,Wh,Zigging and Zagging,Adult,2021-7-20,0:45:57,742038
+000056,CiGr,Eating,Adult,2022-1-22,11:19:33,243301
+000057,WhGr,Racing,Adult,2022-7-13,18:38:33,170332
+000058,Ci,Zigging and Zagging,Juvenile,2021-7-26,23:8:55,617422
+000059,Au,Eating,Sub adult,2021-2-9,8:21:17,394465
+000060,Bl,Racing,Adult,2022-2-13,3:22:59,901728
+000061,Br,Zigging and Zagging,Adult,2021-5-6,12:42:52,278142
+000062,Gr,Zigging and Zagging,Adult,2022-7-26,3:25:32,906816
+000063,Au,Eating,Adult,2021-4-6,4:41:15,272027
+000064,CiGr,Zigging and Zagging,Adult,2022-10-19,16:20:14,867542
+000065,Ci,Climbing,Juvenile,2021-5-22,14:18:24,865926
+000066,Gr,Eating,Juvenile,2022-9-18,10:27:19,034047
+000067,Wh,Chasing,Sub adult,2022-2-23,18:44:53,586645
+000068,Au,Eating,Adult,2022-5-21,7:20:56,425585
+000069,WhGr,Chasing,Sub adult,2021-8-10,10:27:35,338514
+000070,Au,Zigging and Zagging,Juvenile,2022-6-7,23:46:38,001711
+000071,CiGr,Chasing,Adult,2022-9-16,2:41:7,025259
+000072,GrBr,Zigging and Zagging,Adult,2021-4-28,20:55:25,225081
+000073,Br,Zigging and Zagging,Juvenile,2022-10-19,3:30:4,939650
+000074,Wh,Climbing,Sub adult,2021-11-16,17:2:10,616140
+000075,GrBr,Zigging and Zagging,Sub adult,2022-10-7,11:7:22,361559
+000076,Br,Zigging and Zagging,Adult,2021-4-2,12:17:47,432158
+000077,CiBl,Eating,Adult,2022-5-21,19:50:52,165294
+000078,Gr,Zigging and Zagging,Adult,2021-8-6,1:53:46,041567
+000079,BlBr,Racing,Adult,2022-1-7,15:22:9,003829
+000080,Au,Racing,Juvenile,2021-10-3,10:7:51,909290
+000081,Bl,Racing,Adult,2021-7-27,23:58:14,810242
+000082,BlBr,Eating,Adult,2021-4-20,19:13:23,359718
+000083,CiGr,Racing,Juvenile,2021-11-18,14:45:26,935897
+000084,CiBl,Chasing,Adult,2021-6-17,7:10:47,441189
+000085,CiGr,Eating,Adult,2021-10-15,19:4:22,230184
+000086,GrBr,Chasing,Adult,2022-6-20,1:45:13,279382
+000087,GrBr,Zigging and Zagging,Sub adult,2021-5-6,20:33:50,758266
+000088,BlBr,Zigging and Zagging,Juvenile,2021-4-18,19:7:20,276661
+000089,Wh,Zigging and Zagging,Adult,2022-2-4,8:41:0,651147
+000090,Ci,Racing,Adult,2022-4-20,8:57:12,390461
+000091,CiGr,Climbing,Adult,2021-1-9,23:52:44,786411
+000092,Bl,Zigging and Zagging,Sub adult,2021-4-14,22:38:27,505995
+000093,Au,Racing,Sub adult,2022-2-14,19:20:6,608424
+000094,Gr,Climbing,Sub adult,2022-11-20,15:51:24,607053
+000095,Br,Racing,Juvenile,2021-7-15,5:15:54,413319
+000096,CiBl,Chasing,Juvenile,2021-2-5,16:26:5,043378
+000097,CiBl,Racing,Juvenile,2021-7-16,19:15:31,846970
+000098,Wh,Eating,Sub adult,2022-3-22,11:15:44,694092
+000099,CiGr,Racing,Sub adult,2021-1-8,8:3:33,193268
+000100,Gr,Climbing,Juvenile,2021-10-18,15:48:45,233883
