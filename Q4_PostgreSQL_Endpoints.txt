@@ -1,0 +1,44 @@
+>> Question 4: PostgreSQL Endpoints
+>> Group member: Tahir, Jonathan, Peter, Ramy, Swann, Edward
+>> client.query is the single record
+
+>> app.post('/create', (req, res) => { //database table })
+>> The post function above should create the database. 
+>> Example: The function creates a database table that contains squirrel_sighting_id, color_key, activity, age, date, time, and location_id columns. 
+app.post('/create', (req, res) => {
+  const {squirrel_sighting_id, color_key, activity, age, date, time, location_id} = req.body
+  client.query("insert into squirrel_sighting (squirrel_sighting_id, color_key, activity, age, date, time, location_id) values ($1, $2, $3, $4, $5, $6, $7)", 
+                                              [squirrel_sighting_id, color_key, activity, age, date, time, location_id])
+  console.log(req.body)
+}) 
+
+>> app.get('/dbpopulate', (req, res) => { //add data in the table})
+>> The get function above populate the database with data. 
+>> Example: The function pre-populate the database
+app.get('/dbpopulate', (req, res) => {
+  dbPopulate(3, process.argv.slice(2).toString())
+})
+
+>> app.get('/read', (req, res) => { //query database })
+>> The get function above read the query of the database.
+>> Example: 
+app.get('/read', (req, res) => {
+  const response = client.query("select * from squirrel_sighting ion_id").then(res => console.log(res).catch(e => console.log(e)))
+})
+
+>> app.put('/update', (req, res) => { //query database })
+>> The put function above update the data in the table. 
+>> Example: The function update activity value to "Racing" and age value to "juvenile" to the squirrel with the squirrel_sighting_id of 7
+app.put('/update', (req, res) => {
+  client.query("update squirrel_sighting set activity = 'Racing', age = 'juvenile' where squirrel_sighting_id = 7")
+})
+
+>> app.delete('/delete', (req, res) => { //query database })
+>> The delete function above delete the data in the table. 
+>> Example: The function delete the data that has "Juvenile" in age column in the squirrel_sighting table. 
+app.delete('/delete', (req, res) => {
+  client.query("delete from squirrel_sighting where age = 'Juvenile'")
+})
+
+
+

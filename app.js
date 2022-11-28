@@ -1,100 +1,58 @@
-const express = require('express')
-const client = require('./database')
-const bodyParser = require('body-parser')
-const app = express()
-const port = 3000
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+const port = 3000;
 const fs = require("fs");
 const fastcsv = require("fast-csv");
+const client = require("./database");
 
+const dbPopulate = require("./dbpopulate");
+console.log(process.argv.slice(2));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+let processArgs = process.argv.slice(2);
 app.listen(port, () => {
-  console.log("Hello World!")})
-// app.get('/agents', (req, res) => {
-//   client.query(`select * from class`, (err, res) => {
-//     if(!err){
-//         console.log(res.rows);
-//     }else{
-//         console.log(err.message);
-//     }
-//     client.end
-// })
-// })
-// let file = "squirrel_data.csv"
-
-
-// let stream = fs.createReadStream(file);
-// let csvData = [];
-/*let csvStream = fastcsv
-  .parse()
-  .on("data", function(data) {
-    csvData.push(data);
-  })
-  .on("end", function() {
-    // remove the first line: header
-    csvData.shift();
-
-
-    // save csvData
-  
-
-
-client.connect((err, client, done) => {
-if (err) throw err;
-
-try {
-  csvData.forEach(row => {
-    client.query(query, row, (err, res) => {
-      if (err) {
-        console.log(err.stack);
-      } else {
-        console.log("inserted " + res.rowCount + " row:", row);
-      }
-    });
-  });
-} catch(e)
-{
-  console.log(e)
-}
+  console.log(process.argv.slice(2));
 });
+
+
+// PREPOPULATES THE DATABASE(WORKS FOR EACH TABLE)
+app.get("/dbpopulate", (req, res) => {
+  dbPopulate(3, process.argv.slice(2).toString());
 });
-stream.pipe(csvStream);
-*/
+// TO CREATE A SINGLE RECORD AND INSERT IT INTO THE SQUIRREL_SIGHTING TABLE
+app.post("/create", (req, res) => {
+  const {
+    squirrel_sighting_id,
+    color_key,
+    activity,
+    age,
+    date,
+    time,
+    location_id,
+  } = req.body;
+  client.query(
+    "insert into squirrel_sighting (squirrel_sighting_id, color_key, activity, age, date, time, location_id) values ($1, $2, $3, $4, $5, $6, $7)",
+    [squirrel_sighting_id, color_key, activity, age, date, time, location_id]
+  );
+  console.log(req.body);
+});
 
-//CRUD
-// CREATE 
-// READ 
-// UPDATE 
-// DELETE
-let squirrel_data = {
-  squirrel_sighting_id: "1",
-  color_key: "Br",
-  activity: "running",
-  age: "juvenile",
-  date: "2031-04-14",
-  time: "15:51:24",
-  location_id: "846970"
-}
-
-app.get('/create', (req, res) => {
-
-   res.send('hello world')
-  }
-  
-       
-);
-  
-
-app.get('/read', (req, res) => {
-
-})
-app.put('/update', (req, res) => {
-
-})
-app.delete('/delete', (req, res) => {
-
-})
-
-
+// OUTPUTS ALL VALUES FROM SQUIRREL_SIGHTING TABLE 
+app.get("/read", (req, res) => {
+  const response = client
+    .query("select * from squirrel_sighting")
+    .then((res) => console.log(res).catch((e) => console.log(e)));
+});
+// PUT METHOD TO DELETE RECORD(S) FROM SQUIRREL_SIGHTING TABLE
+app.put("/update", (req, res) => {
+  client.query(
+    "update squirrel_sighting set activity = 'Racing', age = 'juvenile' where squirrel_sighting_id = 7"
+  );
+});
+// DELETE METHOD TO DELETE RECORD(S) FROM SQUIRREL_SIGHTING TABLE
+app.delete("/delete", (req, res) => {
+  client.query("delete from squirrel_sighting where age = 'Juvenile'");
+});
